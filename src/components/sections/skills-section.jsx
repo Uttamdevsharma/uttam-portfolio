@@ -1,5 +1,3 @@
-"use client"
-
 import { useTheme } from "../../contexts/theme-context"
 
 export default function SkillsSection() {
@@ -124,19 +122,15 @@ export default function SkillsSection() {
             </h3>
             <div className="space-y-6">
               {proficiencies.map((proficiency, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 mt-2">
-                      <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                    </div>
-                    <div className="flex-1">
-                      <h4 className={`font-semibold text-lg ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
-                        {proficiency.title}
-                      </h4>
-                      <p className={`text-sm mt-1 ${isDarkMode ? "text-gray-400" : "text-gray-500"}`}>
-                        {proficiency.description}
-                      </p>
-                    </div>
+                <div key={index} className="flex items-start gap-3">
+                  <span className="text-orange-500 text-xl">⚡</span>
+                  <div className="flex-1">
+                    <h4 className={`font-semibold text-lg ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
+                      {proficiency.title}
+                    </h4>
+                    <p className={`text-sm mt-1 ${isDarkMode ? "text-gray-400" : "text-gray-500"}`}>
+                      {proficiency.description}
+                    </p>
                   </div>
                 </div>
               ))}

@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { useTheme } from "../../contexts/theme-context"
 
@@ -26,7 +24,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section className={`py-20 ${isDarkMode ? "bg-gray-900/50" : "bg-gray-50"}`}>
+    <section className={`py-20 ${isDarkMode ? "bg-[#171d29]" : "bg-gray-50"}`}>
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-12 text-center">

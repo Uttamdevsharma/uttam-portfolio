@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { useTheme } from "../contexts/theme-context"
 
@@ -29,6 +27,8 @@ export default function Navigation({ activeSection, onSectionChange }) {
 
   const navItems = [
     { id: "skills", label: "Skills" },
+    { id: "education", label: "Education" },
+    { id: "proficiency", label: "Proficiency" },
     { id: "projects", label: "Projects" },
     { id: "achievements", label: "Achievements" },
     { id: "blogs", label: "Blogs" },
