@@ -16,7 +16,7 @@ export default function HeroSection() {
           <div className="space-y-8">
             {/* Main greeting */}
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">Hi all, I'm Uttam 👋</h1>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">Hi all, I'm Uttam <span className="wave-hand">👋</span></h1>
               <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
                 A passionate Full Stack Software Developer 🚀 with experience in building Web and Mobile applications
                 using JavaScript / React.js / Node.js / React Native, and other modern libraries & frameworks.
@@ -145,7 +145,7 @@ export default function HeroSection() {
                 </g>
 
                 {/* Character */}
-                <g transform="translate(330,150)">
+                <g transform="translate(330,150) scale(1.2)">
                   {/* Body */}
                   <rect x="-30" y="0" width="60" height="105" rx="27" fill="#8A2BE2"/>
                   
