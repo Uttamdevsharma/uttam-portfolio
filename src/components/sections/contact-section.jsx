@@ -25,7 +25,7 @@ export default function ContactSection() {
 
   return (
     <section className={`py-20 ${isDarkMode ? "bg-[#171d29]" : "bg-gray-50"}`}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">
           <h2 className={`text-4xl lg:text-5xl font-bold mb-4 ${isDarkMode ? "text-white" : "text-gray-900"}`}>

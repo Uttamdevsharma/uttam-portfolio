@@ -47,7 +47,7 @@ export default function BlogsSection() {
 
   return (
     <section className={`py-20 ${isDarkMode ? "bg-[#171d29] text-white" : "bg-white text-gray-900"}`}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">
           <h2 className={`text-4xl lg:text-5xl font-bold mb-4 ${isDarkMode ? "text-white" : "text-gray-900"}`}>
@@ -59,7 +59,7 @@ export default function BlogsSection() {
         </div>
 
         {/* Blog Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.map((blog, index) => (
             <article
               key={index}

@@ -28,9 +28,8 @@ export default function Navigation({ activeSection, onSectionChange }) {
   const navItems = [
     { id: "skills", label: "Skills" },
     { id: "education", label: "Education" },
-    { id: "proficiency", label: "Proficiency" },
     { id: "projects", label: "Projects" },
-    { id: "achievements", label: "Achievements" },
+    { id: "certifications", label: "Certifications" },
     { id: "blogs", label: "Blogs" },
     { id: "contact", label: "Contact" },
   ]

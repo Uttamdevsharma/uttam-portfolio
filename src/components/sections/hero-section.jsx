@@ -5,12 +5,13 @@ export default function HeroSection() {
 
   return (
     <section
-      className={`min-h-screen flex items-center px-4 sm:px-6 lg:px-8 ${
+      className={`min-h-screen flex items-center ${
         isDarkMode ? "bg-[#171d29] text-white" : "bg-white text-gray-900"
       }`}
     >
-      <div className="max-w-7xl mx-auto w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto w-full px-4">
+        {/* Grid with custom column ratio */}
+        <div className="grid lg:grid-cols-[1.7fr_1fr] gap-12 items-center">
           {/* Left side - Content */}
           <div className="space-y-8">
             {/* Main greeting */}
@@ -23,55 +24,86 @@ export default function HeroSection() {
             </div>
 
             {/* Social Media Icons */}
-            <div className="flex space-x-6">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-2xl hover:text-blue-400 transition-colors"
-              >
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-              </a>
+            <div className="flex space-x-4">
+              {/* GitHub */}
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-2xl hover:text-gray-400 transition-colors"
+                className="text-gray-600 dark:text-gray-200 hover:text-gray-800 dark:hover:text-white transition-colors"
               >
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
               </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+
+              {/* Email */}
+              <a
+                href="mailto:your-email@example.com"
+                className="text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-200 transition-colors"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </a>
+
+              {/* GitLab - Fixed colors */}
+              <a
+                href="https://gitlab.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-500 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-200 transition-colors"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.5l-3 7h6l-3-7zm0 19l-3-7h6l-3 7zm-9-7l3-7-3 7zm18-7l-3 7 3-7z"/>
+                </svg>
+              </a>
+
+              {/* Facebook - Fixed colors */}
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-2xl hover:text-blue-500 transition-colors"
+                className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors"
               >
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
               </a>
+
+              {/* Medium - Fixed colors and better SVG */}
               <a
-                href="https://twitter.com"
+                href="https://medium.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-2xl hover:text-blue-400 transition-colors"
+                className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
                 </svg>
               </a>
+
+              {/* StackOverflow - Fixed colors and better SVG */}
               <a
-                href="https://instagram.com"
+                href="https://stackoverflow.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-2xl hover:text-pink-400 transition-colors"
+                className="text-orange-500 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-200 transition-colors"
               >
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M15.725 0l-1.72 1.277 6.39 8.588 1.716-1.277L15.725 0zm-3.94 3.418l-1.369 1.644 8.225 6.85 1.369-1.644-8.225-6.85zm-3.15 4.465l-.905 1.94 9.702 4.517.904-1.94-9.701-4.517zm-1.85 4.86l-.44 2.093 10.473 2.201.44-2.092-10.473-2.203zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396H1.89zm4.265 2.133v2.13h10.66v-2.13H6.154Z"/>
                 </svg>
               </a>
             </div>
@@ -80,22 +112,96 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
-                className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                className="px-2 py-1 bg-purple-600 text-sm text-white font-semibold rounded-lg transition-colors hover:bg-white hover:text-purple-600"
               >
                 Contact Me
               </button>
-              <button className="px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold rounded-lg transition-colors">
+              <button
+                className="px-1 py-1 bg-purple-600 text-sm text-white font-semibold rounded-lg border-2 border-purple-600 transition-colors hover:bg-white hover:text-purple-600"
+              >
                 Download My Resume
               </button>
             </div>
           </div>
 
-          {/* Right side - Profile Image Space */}
+          {/* Right side - Profile Image */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-80 h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-              <div className="w-72 h-72 bg-gray-200 rounded-full flex items-center justify-center">
-                <span className="text-gray-500 text-lg">Profile Image</span>
-              </div>
+            <div className="w-full h-full flex items-center justify-center">
+              <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+                {/* Background */}
+                
+                {/* Clouds */}
+                <g opacity="0.8">
+                  <ellipse cx="120" cy="90" rx="42" ry="24" fill="#D8BFD8"/>
+                  <ellipse cx="165" cy="82" rx="52" ry="27" fill="#DDA0DD"/>
+                  <ellipse cx="202" cy="98" rx="42" ry="24" fill="#D8BFD8"/>
+                </g>
+                
+                {/* Target circles */}
+                <g transform="translate(90,180)" opacity="0.5" stroke="#6a6f90" fill="none">
+                  <circle cx="0" cy="0" r="90" stroke-width="3"/>
+                  <circle cx="0" cy="0" r="60" stroke-width="2.25"/>
+                  <circle cx="0" cy="0" r="30" stroke-width="2.25"/>
+                </g>
+
+                {/* Character */}
+                <g transform="translate(330,150)">
+                  {/* Body */}
+                  <rect x="-30" y="0" width="60" height="105" rx="27" fill="#8A2BE2"/>
+                  
+                  {/* Legs */}
+                  <rect x="-27" y="105" width="21" height="60" rx="9" fill="#7B68EE"/>
+                  <rect x="6" y="105" width="21" height="60" rx="9" fill="#7B68EE"/>
+                  
+                  {/* Shoes */}
+                  <ellipse cx="-16.5" cy="172.5" rx="24" ry="12" fill="#2C3E50"/>
+                  <ellipse cx="16.5" cy="172.5" rx="24" ry="12" fill="#2C3E50"/>
+                  
+                  {/* Left arm */}
+                  <rect x="-52.5" y="15" width="18" height="52.5" rx="9" fill="#4169E1" transform="rotate(-20)"/>
+                  <circle cx="-67.5" cy="52.5" r="12" fill="#FFB347"/>
+                  
+                  {/* Right arm + waving hand */}
+                  <g transform="translate(45,7.5)">
+                    <rect x="0" y="0" width="18" height="52.5" rx="9" fill="#4169E1"/>
+                    
+                    <g transform="translate(9,-37.5)">
+                      <animateTransform attributeName="transform" type="rotate"
+                        values="10 0 30;30 0 30;10 0 30;-10 0 30;10 0 30"
+                        dur="2s" repeatCount="indefinite"/>
+                      
+                      {/* Palm */}
+                      <ellipse cx="0" cy="22.5" rx="27" ry="21" fill="#FFB347"/>
+                      {/* Fingers */}
+                      <rect x="-15" y="-7.5" width="7.5" height="22.5" rx="3" fill="#FFB347"/>
+                      <rect x="-3" y="-12" width="7.5" height="27" rx="3" fill="#FFB347"/>
+                      <rect x="9" y="-10.5" width="7.5" height="24" rx="3" fill="#FFB347"/>
+                      <rect x="21" y="-4.5" width="7.5" height="21" rx="3" fill="#FFB347"/>
+                    </g>
+                  </g>
+                  
+                  {/* Head */}
+                  <circle cx="0" cy="-30" r="30" fill="#FFB347"/>
+                  
+                  {/* Face */}
+                  <circle cx="-9" cy="-37.5" r="3" fill="#2C3E50"/>
+                  <circle cx="9" cy="-37.5" r="3" fill="#2C3E50"/>
+                  <path d="M -12,-22.5 Q 0,-12 12,-22.5" stroke="#2C3E50" stroke-width="3" fill="none"/>
+                  
+                  {/* Hair/Cap */}
+                  <ellipse cx="0" cy="-52.5" rx="24" ry="15" fill="#8A2BE2"/>
+                </g>
+                
+                {/* Motion lines around hand */}
+                <g transform="translate(420,105)" opacity="0.6">
+                  <path d="M -7.5,-7.5 Q 7.5,-18 22.5,-9" stroke="#8A2BE2" stroke-width="3" fill="none">
+                    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+                  </path>
+                  <path d="M 0,-21 Q 15,-33 30,-18" stroke="#DDA0DD" stroke-width="2.25" fill="none">
+                    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2s" repeatCount="indefinite"/>
+                  </path>
+                </g>
+              </svg>
             </div>
           </div>
         </div>
