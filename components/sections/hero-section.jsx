@@ -3,12 +3,12 @@
 import { useTheme } from "../../contexts/theme-context"
 
 export default function HeroSection() {
-  const { isDark } = useTheme()
+  const { isDarkMode } = useTheme()
 
   return (
     <section
       className={`min-h-screen flex items-center px-4 sm:px-6 lg:px-8 ${
-        isDark ? "bg-[#171d29] text-white" : "bg-white text-gray-900"
+        isDarkMode ? "bg-[#171d29] text-white" : "bg-white text-gray-900"
       }`}
     >
       <div className="max-w-7xl mx-auto w-full">

@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ThemeProvider } from "../contexts/theme-context"
 import Navigation from "../components/navigation"
 import HeroSection from "../components/sections/hero-section"
 import SkillsSection from "../components/sections/skills-section"
@@ -43,33 +42,31 @@ export default function Portfolio() {
   }
 
   return (
-    <ThemeProvider>
-      <div className="min-h-screen">
-        <Navigation activeSection={activeSection} onSectionChange={handleSectionChange} />
-        <main>
-          <section id="home">
-            <HeroSection />
-          </section>
-          <section id="skills">
-            <SkillsSection />
-          </section>
-          <section id="proficiency">
-            <ProficiencySection />
-          </section>
-          <section id="projects">
-            <ProjectsSection />
-          </section>
-          <section id="achievements">
-            <AchievementsSection />
-          </section>
-          <section id="blogs">
-            <BlogsSection />
-          </section>
-          <section id="contact">
-            <ContactSection />
-          </section>
-        </main>
-      </div>
-    </ThemeProvider>
+    <div className="min-h-screen">
+      <Navigation activeSection={activeSection} onSectionChange={handleSectionChange} />
+      <main>
+        <section id="home">
+          <HeroSection />
+        </section>
+        <section id="skills">
+          <SkillsSection />
+        </section>
+        <section id="proficiency">
+          <ProficiencySection />
+        </section>
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+        <section id="achievements">
+          <AchievementsSection />
+        </section>
+        <section id="blogs">
+          <BlogsSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
+      </main>
+    </div>
   )
 }
