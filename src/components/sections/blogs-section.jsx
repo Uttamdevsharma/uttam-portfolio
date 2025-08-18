@@ -11,7 +11,7 @@ export default function BlogsSection() {
       date: "Aug 19, 2025",
       readTime: "8 min read",
       category: "React",
-      image: "../public/blog1.png",
+      image: "/images/blog1.png",
       url: "https://medium.com/@uttamrohit4545/react-hooks-made-simple-a-beginners-journey-beyond-usestate-useeffect-fa26c6bf2fbe",
     },
     {
@@ -21,7 +21,7 @@ export default function BlogsSection() {
       date: "Dec 19, 2025",
       readTime: "10 min read",
       category: "React",
-      image: "../public/blog2.png",
+      image: "/images/blog2.png",
       url: "https://medium.com/@uttamrohit4545/stop-direct-context-usage-in-components-master-the-wrapper-pattern-e58484d02c21",
     },
     {
@@ -31,7 +31,7 @@ export default function BlogsSection() {
       date: "Dec 19, 2025",
       readTime: "10 min read",
       category: "MongoDB",
-      image: "../public/blog3.jpeg",
+      image: "/images/blog3.jpeg",
       url: "https://medium.com/@uttamrohit4545/structuring-data-the-right-way-modern-mongodb-schema-design-tips-176150a4616b",
     }
   ]

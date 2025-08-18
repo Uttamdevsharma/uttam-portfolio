@@ -8,7 +8,7 @@ export default function ProjectsSection() {
       title: "ThePro",
       description:
         "ThesPro is a comprehensive web application designed to streamline the management of academic theses and research projects.It provides a collaborative platform for students, supervisors, and committee members to manage proposals, track progress, and facilitate communication.",
-      image: "../public/thespro.png",
+      image: "/images/thespro.png",
       technologies: ["React", "Tailwind Css", "Firebase"],
       liveUrl: "https://thespro1.netlify.app/",
       githubUrl: "https://github.com/Uttamdevsharma/thespro",
@@ -17,7 +17,7 @@ export default function ProjectsSection() {
       title: "Shaj",
       description:
         "Shaj is a complete and modern e-commerce web application and It features a user-friendly client interface for customers and a comprehensive dashboard for administrators to manage the store.",
-      image: "../public/Shaj.png",
+      image: "/images/Shaj.png",
       technologies: ["React","nodeJS","ExpressJS","MongDB"],
       liveUrl: "https://shaj-client.vercel.app/",
       githubUrl: "https://github.com/Uttamdevsharma/Shaj",
@@ -26,7 +26,7 @@ export default function ProjectsSection() {
       title: "MarkEdit+",
       description:
         "MarkEdit+ is an advanced, feature-rich Markdown editor built with React. It provides a seamless experience for writing and previewing Markdown content in real-time, along with powerful functionalities like image handling, table insertion, and export options.",
-      image: "../public/mark.png",
+      image: "/images/mark.png",
       technologies: ["React", "Tailwind CSS","React-Allotment"],
       liveUrl: "https://markeditex.netlify.app/",
       githubUrl: "https://github.com/Uttamdevsharma/MarkEdit-",

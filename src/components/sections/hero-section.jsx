@@ -116,7 +116,7 @@ export default function HeroSection() {
                 Contact Me
               </button>
               <a
-  href="../public/Uttam_Sharma_CV.pdf"
+  href="/Uttam_Sharma_CV.pdf"
   download="Uttam_Resume.pdf"
   className="px-1 py-1 bg-purple-600 text-sm text-white font-semibold rounded-lg border-2 border-purple-600 transition-colors hover:bg-white hover:text-purple-600 text-center inline-block"
 >
