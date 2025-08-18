@@ -5,45 +5,28 @@ export default function CertificationsSection() {
 
   const certifications = [
     {
-      title: "AWS Solutions Architect Professional",
-      organization: "Amazon Web Services",
-      year: "2024",
-      link: "#",
+      title: "Fullstack Web Development ",
+      organization: "Udemy",
+      year: "2025",
+      link: "https://www.udemy.com/certificate/UC-8697de59-d6af-4efb-9fef-8b8a1bb4bd9e/",
     },
     {
-      title: "Google Cloud Professional Developer",
-      organization: "Google Cloud",
-      year: "2023",
-      link: "#",
+      title: "Frontend Developer(React)",
+      organization: "Hackerrank",
+      year: "2025",
+      link: "https://www.hackerrank.com/certificates/iframe/3d4bc993ba8f",
     },
     {
-      title: "Microsoft Certified: Azure Developer Associate",
-      organization: "Microsoft",
-      year: "2023",
-      link: "#",
+      title: "Master Git and Github",
+      organization: "Udemy",
+      year: "2025",
+      link: "https://www.udemy.com/certificate/UC-c23117e2-3877-448a-a54f-e6b99a793087/",
     },
-    {
-      title: "Certified Kubernetes Administrator (CKA)",
-      organization: "CNCF",
-      year: "2022",
-      link: "#",
-    },
-    {
-      title: "Professional Scrum Master I (PSM I)",
-      organization: "Scrum.org",
-      year: "2022",
-      link: "#",
-    },
-    {
-      title: "Meta Front-End Developer Professional Certificate",
-      organization: "Meta",
-      year: "2021",
-      link: "#",
-    },
+    
   ]
 
   return (
-    <section className={`py-20 ${isDarkMode ? "bg-[#171d29]" : "bg-gray-50"}`}>
+    <section className={`py-20 px-12 ${isDarkMode ? "bg-[#171d29]" : "bg-gray-50"}`}>
       <div className="container mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">

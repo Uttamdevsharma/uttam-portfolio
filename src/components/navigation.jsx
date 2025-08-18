@@ -40,7 +40,7 @@ export default function Navigation({ activeSection, onSectionChange }) {
         isDarkMode ? "bg-[#171d29] border-gray-700" : "bg-white border-gray-200"
       } border-b backdrop-blur-sm ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -49,7 +49,8 @@ export default function Navigation({ activeSection, onSectionChange }) {
               className={`text-xl font-bold ${isDarkMode ? "text-white" : "text-gray-900"} hover:opacity-80 transition-opacity`}
               style={{ fontFamily: "cursive" }}
             >
-              Uttam Sharma
+              {/* 𝒰𝓉𝓉𝒶𝓂 𝒮𝒽𝒶𝓇𝓂𝒶 */}
+              ᑌ丅丅ᗩᗰ ᔕᕼᗩᖇᗰᗩ
             </button>
           </div>
 

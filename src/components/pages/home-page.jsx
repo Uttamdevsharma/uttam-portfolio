@@ -54,7 +54,7 @@ export default function HomePage() {
 
 
   return (
-    <div className="px-16">
+    <div>
       <Navigation activeSection={activeSection} onSectionChange={handleSectionChange} />
       <div id="home" ref={sectionRefs.home}>
         <HeroSection />

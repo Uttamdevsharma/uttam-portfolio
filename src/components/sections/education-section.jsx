@@ -5,16 +5,16 @@ export default function EducationSection() {
 
   const degrees = [
     {
-      degree: "Bachelor of Science (BSc)",
-      institution: "University of Example",
-      year: "2018 - 2021",
+      degree: "B.Sc. in Computer Science and Engineering ",
+      institution: "Green University Of Bangladesh",
+      year: "2022 - 2026",
       description: "Focused on computer science fundamentals, algorithms, and software development."
     },
     {
-      degree: "Honours in Computer Science",
-      institution: "University of Example",
-      year: "2022",
-      description: "Specialized in advanced topics including machine learning and distributed systems."
+      degree: "HSC (Higher Secondary Certificate)",
+      institution: "Cantonment Public School And College, BUSMS",
+      year: "2019",
+      description: "Focused on science subjects, including Mathematics, Physics, and Chemistry."
     }
   ];
 

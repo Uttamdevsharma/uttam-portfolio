@@ -6,74 +6,50 @@ export default function SkillsSection() {
   const skillCategories = [
     {
       title: "Languages:",
-      skills: ["Python", "C++", "C", "JavaScript", "TypeScript"],
+      skills: ["JavaScript ", "C++", "C", "Python"],
     },
     {
       title: "Frontend:",
-      skills: ["React", "Next.js", "Tailwind CSS", "Chakra UI", "HTML", "CSS"],
+      skills: ["React.js", "Redux", "Next.js", "Tailwind CSS", "Material UI", "HTML5", "CSS3", "React Router"],
     },
     {
       title: "Backend:",
-      skills: ["FastAPI", "Node.js", "Express.js", "REST API"],
+      skills: ["Node.js", "Express.js", "REST API Development", "JWT Authentication"],
     },
     {
       title: "Databases:",
-      skills: ["PostgreSQL", "Redis", "Firebase", "MongoDB", "Pinecone"],
+      skills: ["MongoDB", "Mongoose", "Firebase", "MySQL"],
     },
     {
-      title: "AI/ML:",
-      skills: [
-        "PyTorch",
-        "Transformers",
-        "LangChain",
-        "Agent-to-Agent (A2A)",
-        "Model Context Protocol (MCP)",
-        "AI Agents",
-        "Prompt Engineering",
-        "RAG Pipelines",
-        "Vector Databases",
-        "LLM Integration",
-        "Vector Embeddings",
-        "Tool Calling",
-        "Vercel AI SDK",
-      ],
+      title: "Tools & Platforms:",
+      skills: ["Git", "GitHub", "Postman", "VS Code"],
     },
   ]
 
   const proficiencies = [
     {
-      title: "Distributed Systems & Architecture",
-      description: "(Production RAG pipelines processing millions of data points, 99.9% uptime)",
+      title: "Full Stack Development",
+      description: "(React, Next.js, Node.js, Express, MongoDB — building responsive & scalable web applications)",
     },
     {
-      title: "Leadership & Team Management",
-      description: "(Led cross-functional teams of 4+ engineers, scaled systems to thousands of users)",
+      title: "Frontend Engineering",
+      description: "(Modern UI/UX with React, Next.js, Tailwind CSS, Responsive design)",
     },
     {
       title: "Backend Engineering",
-      description:
-        "(REST APIs serving 10K+ daily active users, 10x performance optimization, Database design, Data processing, API design, Rate limiting)",
+      description: "(REST API development, Authentication, Database design, Performance optimization)",
     },
     {
-      title: "Full Stack Development",
-      description: "(React, Next.js, TypeScript, Modern UI/UX, Responsive design, Production deployments)",
+      title: "Database Management",
+      description: "(MongoDB, PostgreSQL, Firebase — schema design, queries, real-time data handling)",
     },
     {
-      title: "Cloud Infrastructure",
-      description: "(AWS ECS/EKS, Auto-scaling, Container orchestration, CI/CD Pipelines, Monitoring & Logging)",
+      title: "Cloud & Deployment",
+      description: "(Vercel, Netlify, Render, Firebase Hosting — CI/CD basics, production deployment)",
     },
     {
-      title: "AI/ML Production Systems",
-      description:
-        "(RAG pipelines, Vector databases, Vector embeddings, LLM integration, Autonomous AI Agents, Prompt Engineering)",
-    },
-    {
-      title: "Data Engineering",
-      description: "(Multi-source ETL pipelines processing TB+ of data, Real-time processing, Database optimization)",
-    },
-    {
-      title: "System Performance",
-      description: "(High-throughput and low-latency systems, Concurrent user scaling, Query optimization)",
+      title: "Collaboration & Version Control",
+      description: "(Git, GitHub, Agile workflows, Team projects)",
     },
   ]
 
@@ -84,7 +60,7 @@ export default function SkillsSection() {
   ]
 
   return (
-    <section className={`py-20 ${isDarkMode ? "bg-[#171d29] text-white" : "bg-white text-gray-900"}`}>
+    <section className={`py-20 px-12 ${isDarkMode ? "bg-[#171d29] text-white" : "bg-white text-gray-900"}`}>
       <div className="container mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -122,8 +98,8 @@ export default function SkillsSection() {
           </div>
 
           {/* Right Column - Proficiencies */}
-          <div className="space-y-6 flex flex-col items-center">
-            <h3 className={`text-2xl font-bold mb-6 ${isDarkMode ? "text-gray-300" : "text-gray-600"}`}>
+          <div className="space-y-3 flex flex-col ">
+            <h3 className={`text-2xl font-semibold mb-0 ${isDarkMode ? "text-gray-300" : "text-gray-600"}`}>
               Proficient in:
             </h3>
             <div className="space-y-6 text-left w-full">

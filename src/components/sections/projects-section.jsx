@@ -5,44 +5,37 @@ export default function ProjectsSection() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "ThePro",
       description:
-        "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-      image: "/modern-ecommerce-interface.png",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "ThesPro is a comprehensive web application designed to streamline the management of academic theses and research projects.It provides a collaborative platform for students, supervisors, and committee members to manage proposals, track progress, and facilitate communication.",
+      image: "../public/thespro.png",
+      technologies: ["React", "Tailwind Css", "Firebase"],
+      liveUrl: "https://thespro1.netlify.app/",
+      githubUrl: "https://github.com/Uttamdevsharma/thespro",
     },
     {
-      title: "AI Chat Application",
+      title: "Shaj",
       description:
-        "Real-time chat application powered by AI with natural language processing capabilities and smart response generation.",
-      image: "/ai-chatbot-interface.png",
-      technologies: ["Next.js", "OpenAI", "WebSocket", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "Shaj is a complete and modern e-commerce web application and It features a user-friendly client interface for customers and a comprehensive dashboard for administrators to manage the store.",
+      image: "../public/Shaj.png",
+      technologies: ["React","nodeJS","ExpressJS","MongDB"],
+      liveUrl: "https://shaj-client.vercel.app/",
+      githubUrl: "https://github.com/Uttamdevsharma/Shaj",
     },
     {
-      title: "Project Management Tool",
+      title: "MarkEdit+",
       description:
-        "Collaborative project management platform with task tracking, team collaboration, and progress analytics.",
-      image: "/project-management-dashboard.png",
-      technologies: ["React", "Express.js", "MySQL", "Socket.io"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "MarkEdit+ is an advanced, feature-rich Markdown editor built with React. It provides a seamless experience for writing and previewing Markdown content in real-time, along with powerful functionalities like image handling, table insertion, and export options.",
+      image: "../public/mark.png",
+      technologies: ["React", "Tailwind CSS","React-Allotment"],
+      liveUrl: "https://markeditex.netlify.app/",
+      githubUrl: "https://github.com/Uttamdevsharma/MarkEdit-",
     },
-    {
-      title: "Weather Analytics Dashboard",
-      description: "Data visualization dashboard for weather analytics with real-time updates and predictive insights.",
-      image: "/weather-analytics-dashboard.png",
-      technologies: ["Vue.js", "Python", "FastAPI", "Chart.js"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
+   
   ]
 
   return (
-    <section className={`py-20 ${isDarkMode ? "bg-[#171d29] text-white" : "bg-white text-gray-900"}`}>
+    <section className={`py-20 px-12 ${isDarkMode ? "bg-[#171d29] text-white" : "bg-white text-gray-900"}`}>
       <div className="container mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">

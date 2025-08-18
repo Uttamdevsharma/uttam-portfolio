@@ -11,15 +11,14 @@ export default function HeroSection() {
     >
       <div className="max-w-7xl mx-auto w-full px-4">
         {/* Grid with custom column ratio */}
-        <div className="grid lg:grid-cols-[1.7fr_1fr] gap-12 items-center">
+        <div className="grid lg:grid-cols-[1.8fr_1fr] gap-12 items-center">
           {/* Left side - Content */}
           <div className="space-y-8">
             {/* Main greeting */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">Hi all, I'm Uttam <span className="wave-hand">👋</span></h1>
               <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
-                A passionate Full Stack Software Developer 🚀 with experience in building Web and Mobile applications
-                using JavaScript / React.js / Node.js / React Native, and other modern libraries & frameworks.
+              A Passionate Full Stack Developer 🚀 specialized in building modern web applications with React, Node.js, Express, MongoDB, and Next.js. Dedicated to creating scalable, user-friendly, and efficient solutions.
               </p>
             </div>
 
@@ -27,7 +26,7 @@ export default function HeroSection() {
             <div className="flex space-x-4">
               {/* GitHub */}
               <a
-                href="https://github.com"
+                href="https://github.com/Uttamdevsharma"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-200 hover:text-gray-800 dark:hover:text-white transition-colors"
@@ -39,7 +38,7 @@ export default function HeroSection() {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/uttamkds/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors"
@@ -51,7 +50,7 @@ export default function HeroSection() {
 
               {/* Email */}
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:uttamrohit4545@gmail.com"
                 className="text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-200 transition-colors"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -60,7 +59,7 @@ export default function HeroSection() {
               </a>
 
               {/* GitLab - Fixed colors */}
-              <a
+              {/* <a
                 href="https://gitlab.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -69,11 +68,11 @@ export default function HeroSection() {
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2.5l-3 7h6l-3-7zm0 19l-3-7h6l-3 7zm-9-7l3-7-3 7zm18-7l-3 7 3-7z"/>
                 </svg>
-              </a>
+              </a> */}
 
               {/* Facebook - Fixed colors */}
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/uttamkumar.devsharma.7/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors"
@@ -85,7 +84,7 @@ export default function HeroSection() {
 
               {/* Medium - Fixed colors and better SVG */}
               <a
-                href="https://medium.com"
+                href="https://medium.com/@uttamrohit4545"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -96,7 +95,7 @@ export default function HeroSection() {
               </a>
 
               {/* StackOverflow - Fixed colors and better SVG */}
-              <a
+              {/* <a
                 href="https://stackoverflow.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -105,7 +104,7 @@ export default function HeroSection() {
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M15.725 0l-1.72 1.277 6.39 8.588 1.716-1.277L15.725 0zm-3.94 3.418l-1.369 1.644 8.225 6.85 1.369-1.644-8.225-6.85zm-3.15 4.465l-.905 1.94 9.702 4.517.904-1.94-9.701-4.517zm-1.85 4.86l-.44 2.093 10.473 2.201.44-2.092-10.473-2.203zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396H1.89zm4.265 2.133v2.13h10.66v-2.13H6.154Z"/>
                 </svg>
-              </a>
+              </a> */}
             </div>
 
             {/* Action Buttons */}
@@ -116,11 +115,14 @@ export default function HeroSection() {
               >
                 Contact Me
               </button>
-              <button
-                className="px-1 py-1 bg-purple-600 text-sm text-white font-semibold rounded-lg border-2 border-purple-600 transition-colors hover:bg-white hover:text-purple-600"
-              >
-                Download My Resume
-              </button>
+              <a
+  href="../public/Uttam_Sharma_CV.pdf"
+  download="Uttam_Resume.pdf"
+  className="px-1 py-1 bg-purple-600 text-sm text-white font-semibold rounded-lg border-2 border-purple-600 transition-colors hover:bg-white hover:text-purple-600 text-center inline-block"
+>
+  Download My Resume
+</a>
+
             </div>
           </div>
 

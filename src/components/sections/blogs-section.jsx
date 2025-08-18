@@ -5,48 +5,39 @@ export default function BlogsSection() {
 
   const blogs = [
     {
-      title: "Advanced React Patterns for Scalable Applications",
+      title: "React Hooks Made Simple",
       excerpt:
-        "Explore advanced React patterns including render props, compound components, and custom hooks for building maintainable applications.",
-      date: "Dec 15, 2024",
+        "Most beginners start React with useState and useEffect, but Hooks offer much more.",
+      date: "Aug 19, 2025",
       readTime: "8 min read",
       category: "React",
-      image: "/react-patterns-blog.png",
-      url: "#",
+      image: "../public/blog1.png",
+      url: "https://medium.com/@uttamrohit4545/react-hooks-made-simple-a-beginners-journey-beyond-usestate-useeffect-fa26c6bf2fbe",
     },
     {
-      title: "Building Production-Ready RAG Pipelines",
+      title: "Stop Direct Context Usage — Master the Wrapper Pattern",
       excerpt:
-        "A comprehensive guide to building and deploying Retrieval-Augmented Generation systems in production environments.",
-      date: "Dec 10, 2024",
-      readTime: "12 min read",
-      category: "AI/ML",
-      image: "/rag-pipeline-blog.png",
-      url: "#",
-    },
-    {
-      title: "Microservices Architecture: Best Practices",
-      excerpt:
-        "Learn the essential patterns and practices for designing and implementing microservices architecture at scale.",
-      date: "Dec 5, 2024",
+        "React makes building interactive UIs easier than ever,",
+      date: "Dec 19, 2025",
       readTime: "10 min read",
-      category: "Architecture",
-      image: "/microservices-blog.png",
-      url: "#",
+      category: "React",
+      image: "../public/blog2.png",
+      url: "https://medium.com/@uttamrohit4545/stop-direct-context-usage-in-components-master-the-wrapper-pattern-e58484d02c21",
     },
     {
-      title: "Node.js Performance Optimization Techniques",
-      excerpt: "Discover proven techniques to optimize Node.js applications for better performance and scalability.",
-      date: "Nov 28, 2024",
-      readTime: "7 min read",
-      category: "Backend",
-      image: "/nodejs-performance-blog.png",
-      url: "#",
-    },
+      title: "Structuring Data the Right Way",
+      excerpt:
+        "Designing a MongoDB schema is more than just creating collections and documents —",
+      date: "Dec 19, 2025",
+      readTime: "10 min read",
+      category: "MongoDB",
+      image: "../public/blog3.jpeg",
+      url: "https://medium.com/@uttamrohit4545/structuring-data-the-right-way-modern-mongodb-schema-design-tips-176150a4616b",
+    }
   ]
 
   return (
-    <section className={`py-20 ${isDarkMode ? "bg-[#171d29] text-white" : "bg-white text-gray-900"}`}>
+    <section className={`py-20 px-12 ${isDarkMode ? "bg-[#171d29] text-white" : "bg-white text-gray-900"}`}>
       <div className="container mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">
