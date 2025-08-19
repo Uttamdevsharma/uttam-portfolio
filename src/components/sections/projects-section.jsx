@@ -31,16 +31,6 @@ export default function ProjectsSection() {
       liveUrl: "https://markeditex.netlify.app/",
       githubUrl: "https://github.com/Uttamdevsharma/MarkEdit-",
     },
-    {
-      title: "Personal-Portfolio",
-      description:
-        "A personal portfolio website showcasing my projects, skills, and development journey as a Full Stack Developer, built with modern web technologies for a responsive and user-friendly experience.",
-      image: "/images/dark-mode.png",
-      technologies: ["React", "Tailwind CSS","Tailwind CSS","Responsive Design"],
-      liveUrl: "https://uttam-devjourney.netlify.app/",
-      githubUrl: "https://github.com/Uttamdevsharma/uttam-portfolio",
-    },
-
    
   ]
 
@@ -58,7 +48,7 @@ export default function ProjectsSection() {
         </div>
 
         {/* Projects Grid */}
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
