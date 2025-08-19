@@ -4,7 +4,7 @@ This is a personal portfolio website built with React, Vite, and Tailwind CSS. I
 
 ## Live Demo
 
-[https://uttam-sharma.vercel.app/](https://uttam-sharma.vercel.app/)
+[https://my-journyey.com](https://uttam-devjourney.netlify.app/)
 
 ## Features
 
@@ -83,7 +83,7 @@ To get a local copy up and running, follow these simple steps.
 
 | Light Mode                                 | Dark Mode                                  |
 | ------------------------------------------ | ------------------------------------------ |
-| ![Light Mode](public/images/portfolio_icon.png) | ![Dark Mode](public/images/portfolio_icon.png) |
+| ![Light Mode](public/images/portfolio thumbnail.png) | ![Dark Mode](public/images/portfolio_icon.png) |
 
 ## Contact
 
