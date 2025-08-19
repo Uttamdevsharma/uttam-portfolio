@@ -47,43 +47,13 @@ To get a local copy up and running, follow these simple steps.
     npm run dev
     ```
 
-## Project Structure
 
-```
-.
-├── public
-│   ├── images
-│   └── Uttam_Sharma_CV.pdf
-├── src
-│   ├── assets
-│   ├── components
-│   │   ├── pages
-│   │   │   └── home-page.jsx
-│   │   ├── sections
-│   │   │   ├── blogs-section.jsx
-│   │   │   ├── certifications-section.jsx
-│   │   │   ├── contact-section.jsx
-│   │   │   ├── education-section.jsx
-│   │   │   ├── hero-section.jsx
-│   │   │   ├── projects-section.jsx
-│   │   │   └── skills-section.jsx
-│   │   └── navigation.jsx
-│   ├── contexts
-│   │   └── theme-context.jsx
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── .gitignore
-├── index.html
-├── package.json
-└── README.md
-```
 
 ## Screenshots
 
 | Light Mode                                 | Dark Mode                                  |
 | ------------------------------------------ | ------------------------------------------ |
-| ![Light Mode](public/images/portfolio thumbnail.png) | ![Dark Mode](public/images/portfolio_icon.png) |
+| ![Light Mode](public/images/light-mode.png) | ![Dark Mode](public/images/dark-mode.png) |
 
 ## Contact
 

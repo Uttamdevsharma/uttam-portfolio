@@ -7,7 +7,7 @@ export default function ProjectsSection() {
     {
       title: "ThePro",
       description:
-        "ThesPro is a comprehensive web application designed to streamline the management of academic theses and research projects.It provides a collaborative platform for students, supervisors, and committee members to manage proposals, track progress, and facilitate communication.",
+        "ThesPro is a comprehensive web application designed to streamline the management of academic theses and research projects.It provides a collaborative platform for students, supervisors, and committee.",
       image: "/images/thespro.png",
       technologies: ["React", "Tailwind Css", "Firebase"],
       liveUrl: "https://thespro1.netlify.app/",
@@ -25,7 +25,7 @@ export default function ProjectsSection() {
     {
       title: "MarkEdit+",
       description:
-        "MarkEdit+ is an advanced, feature-rich Markdown editor built with React. It provides a seamless experience for writing and previewing Markdown content in real-time, along with powerful functionalities like image handling, table insertion, and export options.",
+        "MarkEdit+ is an advanced, feature-rich Markdown editor built with React. It provides a seamless experience for writing and previewing Markdown content in real-time, along with powerful functionalities.",
       image: "/images/mark.png",
       technologies: ["React", "Tailwind CSS","React-Allotment"],
       liveUrl: "https://markeditex.netlify.app/",
