@@ -7,7 +7,7 @@ export default function ProjectsSection() {
     {
       title: "ThePro",
       description:
-        "ThesPro is a comprehensive web application designed to streamline the management of academic theses and research projects.It provides a collaborative platform for students, supervisors, and committee.",
+        "ThesPro is a comprehensive web application designed to streamline the management of academic theses and research projects. It provides a collaborative platform for students, supervisors, and committee.",
       image: "/images/thespro.png",
       technologies: ["React", "Tailwind Css", "Firebase"],
       liveUrl: "https://thespro1.netlify.app/",
@@ -16,7 +16,7 @@ export default function ProjectsSection() {
     {
       title: "Shaj",
       description:
-        "Shaj is a complete and modern e-commerce web application and It features a user-friendly client interface for customers and a comprehensive dashboard for administrators to manage the store.",
+        "Shaj is a complete and modern e-commerce web application. It features a user-friendly client interface for customers and a comprehensive dashboard for administrators to manage the store.",
       image: "/images/Shaj.png",
       technologies: ["React","nodeJS","ExpressJS","MongDB"],
       liveUrl: "https://shaj-client.vercel.app/",
@@ -35,8 +35,8 @@ export default function ProjectsSection() {
       title: "Personal-Portfolio",
       description:
         "A personal portfolio website showcasing my projects, skills, and development journey as a Full Stack Developer, built with modern web technologies for a responsive and user-friendly experience.",
-      image: "/images/dark-mode.png",
-      technologies: ["React", "Tailwind CSS","Tailwind CSS","Responsive Design"],
+      image: "/images/light-mode.png",
+      technologies: ["React", "Tailwind CSS","Responsive Design"],
       liveUrl: "https://uttam-devjourney.netlify.app/",
       githubUrl: "https://github.com/Uttamdevsharma/uttam-portfolio",
     },   
@@ -62,7 +62,9 @@ export default function ProjectsSection() {
               key={index}
               className={`rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 ${
                 isDarkMode ? "bg-gray-800/50" : "bg-gray-100"
-              } backdrop-blur-sm ${projects.length % 2 !== 0 && index === projects.length - 1 ? "lg:col-span-3 lg:w-1/3 lg:mx-auto" : "" }`}
+              } backdrop-blur-sm ${
+                index === projects.length - 1 ? "lg:col-start-2 lg:col-end-3" : ""
+              }`}
             >
               {/* Project Image */}
               <div className="aspect-video overflow-hidden">
