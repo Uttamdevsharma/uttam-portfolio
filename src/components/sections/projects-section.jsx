@@ -54,7 +54,7 @@ export default function ProjectsSection() {
               key={index}
               className={`rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 ${
                 isDarkMode ? "bg-gray-800/50" : "bg-gray-100"
-              } backdrop-blur-sm`}
+              } backdrop-blur-sm ${projects.length % 2 !== 0 && index === projects.length - 1 ? "lg:col-span-3 lg:w-1/3 lg:mx-auto" : "" }`}
             >
               {/* Project Image */}
               <div className="aspect-video overflow-hidden">
