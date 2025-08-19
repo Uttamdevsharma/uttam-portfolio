@@ -59,4 +59,4 @@ To get a local copy up and running, follow these simple steps.
 
 Uttam Sharma - [uttamrohit4545@gmail.com](mailto:uttamrohit4545@gmail.com)
 
-Project Link: [https://github.com/Uttamdevsharma/react-portfolio](https://github.com/Uttamdevsharma/react-portfolio)
+Project Link: [https://github.com/Uttamdevsharma/uttam-portfolio](https://github.com/Uttamdevsharma/uttam-portfolio)
